@@ -4,10 +4,10 @@
 
 ![WhatsApp API Banner](https://camo.githubusercontent.com/8c1cc888a216088f8515ca5eb0dc7131bb190d6059af8d02c4616e39b6639114/68747470733a2f2f69696c692e696f2f325a706a746c702e6a7067)
 
-[![npm version](https://img.shields.io/npm/v/@owensdev1/baileys?style=for-the-badge&color=00d26a)](https://www.npmjs.com/package/@owensdev1/baileys)
-[![Downloads](https://img.shields.io/npm/dm/@owensdev1/baileys?style=for-the-badge&color=blue)](https://www.npmjs.com/package/@owensdev1/baileys)
-[![GitHub stars](https://img.shields.io/github/stars/owensdev1/baileys?style=for-the-badge&color=yellow)](https://github.com/owensdev1/baileys/stargazers)
-[![License](https://img.shields.io/badge/License-GPL%20v3-red?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
+[![npm version](https://img.shields.io/npm/v/@owensdev1/baileys?style=for-the-badge&color=00d26a&logo=npm&logoColor=white)](https://www.npmjs.com/package/@owensdev1/baileys)
+[![Downloads](https://img.shields.io/npm/dm/@owensdev1/baileys?style=for-the-badge&color=4285f4&logo=download&logoColor=white)](https://www.npmjs.com/package/@owensdev1/baileys)
+[![GitHub stars](https://img.shields.io/github/stars/owensdev1/baileys?style=for-the-badge&color=ffb400&logo=github&logoColor=white)](https://github.com/owensdev1/baileys/stargazers)
+[![License](https://img.shields.io/badge/License-GPL%20v3-e74c3c?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0)
 
 **A powerful WebSockets-based TypeScript library for interacting with the WhatsApp Web API**
 
@@ -34,13 +34,76 @@
 
 <div align="center">
 
-| 🔐 **Multi-Device Support** | 📱 **QR & Pairing Code** | 🎨 **Rich Messages** | 🔄 **Real-time Events** |
-|:---:|:---:|:---:|:---:|
-| Connect as secondary device | Multiple connection methods | Buttons, polls, media, etc. | Live message updates |
+<table>
+<tr>
+<td align="center" width="200px">
 
-| 👥 **Group Management** | 🔒 **Privacy Controls** | 📊 **Message History** | 🎯 **Custom Functions** |
-|:---:|:---:|:---:|:---:|
-| Full admin capabilities | Block, privacy settings | Fetch chat history | Extensible architecture |
+### 🔐 Multi-Device
+**Connect as secondary device**
+
+Advanced multi-device support with seamless synchronization across platforms
+
+</td>
+<td align="center" width="200px">
+
+### 📱 QR & Pairing
+**Multiple connection methods**
+
+Support for both QR code scanning and pairing code authentication
+
+</td>
+<td align="center" width="200px">
+
+### 🎨 Rich Messages
+**Buttons, polls, media, etc.**
+
+Interactive messages with buttons, polls, location sharing, and media attachments
+
+</td>
+<td align="center" width="200px">
+
+### 🔄 Real-time Events
+**Live message updates**
+
+WebSocket-based real-time messaging with instant delivery notifications
+
+</td>
+</tr>
+<tr>
+<td align="center" width="200px">
+
+### 👥 Group Management
+**Full admin capabilities**
+
+Complete group administration including member management and settings control
+
+</td>
+<td align="center" width="200px">
+
+### 🔒 Privacy Controls
+**Block, privacy settings**
+
+Comprehensive privacy management and user blocking functionality
+
+</td>
+<td align="center" width="200px">
+
+### 📊 Message History
+**Fetch chat history**
+
+Access and manage complete conversation history with powerful search capabilities
+
+</td>
+<td align="center" width="200px">
+
+### 🎯 Custom Functions
+**Extensible architecture**
+
+Highly customizable with plugin support and custom event handlers
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -50,15 +113,17 @@
 
 ### 📦 Installation
 
-Choose your preferred package manager:
+<div align="center">
 
 ```bash
-# Using npm (stable version) **not available**
+# 📦 Using npm (stable version) **not available**
 npm install @owensdev1/baileys
 
-# Using yarn (edge version)
+# 🧶 Using yarn (edge version)
 yarn add @owensdev1/baileys@^2.0.0
 ```
+
+</div>
 
 ### 🔌 Basic Usage
 
@@ -107,41 +172,52 @@ connectToWhatsApp();
 
 ---
 
+<div align="center">
+
 ## 📚 Table of Contents
 
-<details>
-<summary>🔗 <strong>Click to expand full contents</strong></summary>
+<table>
+<tr>
+<td align="center" width="33%">
 
-### 🏗️ **Setup & Connection**
+### 🏗️ Setup & Connection
 - [🔌 Connecting Account](#connecting-account)
-  - [📱 QR Code Connection](#starting-socket-with-qr-code)
-  - [🔢 Pairing Code Connection](#starting-socket-with-pairing-code)
-  - [📜 Receive Full History](#receive-full-history)
+- [📱 QR Code Connection](#starting-socket-with-qr-code)
+- [🔢 Pairing Code Connection](#starting-socket-with-pairing-code)
+- [📜 Receive Full History](#receive-full-history)
 - [⚙️ Socket Configuration](#important-notes-about-socket-config)
 - [💾 Save Auth Info](#saving--restoring-sessions)
 
-### 📨 **Messaging**
+</td>
+<td align="center" width="33%">
+
+### 📨 Messaging
 - [📤 Sending Messages](#sending-messages)
-  - [📝 Text Messages](#text-message)
-  - [🔘 Button Messages](#buttons-message)
-  - [🎯 Interactive Messages](#interactive-message)
-  - [📋 Poll Messages](#poll-message)
-  - [📍 Location Messages](#location-message)
-  - [👤 Contact Messages](#contact-message)
+- [📝 Text Messages](#text-message)
+- [🔘 Button Messages](#buttons-message)
+- [🎯 Interactive Messages](#interactive-message)
+- [📋 Poll Messages](#poll-message)
+- [📍 Location Messages](#location-message)
+- [👤 Contact Messages](#contact-message)
 - [🎬 Media Messages](#media-messages)
 - [✏️ Modify Messages](#modify-messages)
 
-### 👥 **Groups & Privacy**
+</td>
+<td align="center" width="33%">
+
+### 🔧 Advanced Features
 - [👥 Groups Management](#groups)
 - [🔒 Privacy Settings](#privacy)
 - [📢 Broadcast & Stories](#broadcast-lists--stories)
-
-### 🔧 **Advanced**
 - [📊 Data Store Implementation](#implementing-a-data-store)
 - [🎯 Custom Functionality](#writing-custom-functionality)
 - [🐛 Debug Mode](#enabling-debug-level-in-baileys-logs)
 
-</details>
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
@@ -149,8 +225,12 @@ connectToWhatsApp();
 
 ### 📱 Starting socket with **QR-CODE**
 
+<div align="center">
+
 > [!TIP]
-> Customize browser name using the `Browser` constant. See [available browsers](https://baileys.whiskeysockets.io/types/BrowsersMap.html).
+> **Pro Tip:** Customize browser name using the `Browser` constant. See [available browsers](https://baileys.whiskeysockets.io/types/BrowsersMap.html).
+
+</div>
 
 ```javascript
 const { default: makeWASocket, Browsers } = require("@owensdev1/baileys");
@@ -163,8 +243,13 @@ const sock = makeWASocket({
 
 ### 🔢 Starting socket with **Pairing Code**
 
+<div align="center">
+
 > [!IMPORTANT]
-> Pairing Code connects WhatsApp Web without QR-CODE. Phone number format: country code + number (no +, (), or -)
+> **Pairing Code connects WhatsApp Web without QR-CODE.**  
+> Phone number format: country code + number (no +, (), or -)
+
+</div>
 
 ```javascript
 const sock = makeWASocket({
@@ -191,7 +276,11 @@ if (!sock.authState.creds.registered) {
 
 ## 💾 Saving & Restoring Sessions
 
-Never scan QR codes again! Save your session:
+<div align="center">
+
+**🎯 Never scan QR codes again! Save your session:**
+
+</div>
 
 ```javascript
 const { useMultiFileAuthState } = require("@owensdev1/baileys");
@@ -204,12 +293,51 @@ const sock = makeWASocket({ auth: state });
 sock.ev.on('creds.update', saveCreds);
 ```
 
+<div align="center">
+
 > [!WARNING]
-> Always save auth keys when they update (`authState.keys.set()` is called) to ensure message delivery!
+> **Critical:** Always save auth keys when they update (`authState.keys.set()` is called) to ensure message delivery!
+
+</div>
 
 ---
 
 ## 📤 Sending Messages
+
+<div align="center">
+
+### 🎨 Message Types Gallery
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+**📝 Text**
+Simple text messages
+
+</td>
+<td align="center" width="25%">
+
+**🔘 Buttons**
+Interactive buttons
+
+</td>
+<td align="center" width="25%">
+
+**📋 Polls**
+Survey & voting
+
+</td>
+<td align="center" width="25%">
+
+**🎬 Media**
+Images, videos, audio
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ### 📝 Text Message
 ```javascript
@@ -287,6 +415,35 @@ await sock.sendMessage(jid, {
 });
 ```
 
+<div align="center">
+
+### 🎬 Media Messages
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**🖼️ Images**
+JPG, PNG, WebP support
+
+</td>
+<td align="center" width="33%">
+
+**🎥 Videos**
+MP4, AVI with captions
+
+</td>
+<td align="center" width="33%">
+
+**🎵 Audio**
+Voice notes & music
+
+</td>
+</tr>
+</table>
+
+</div>
+
 ### 🖼️ Image Message
 ```javascript
 await sock.sendMessage(jid, {
@@ -316,8 +473,12 @@ await sock.sendMessage(jid, {
 
 ## 📊 Implementing a Data Store
 
+<div align="center">
+
 > [!IMPORTANT]
-> Build your own data store for production. The in-memory store is just for testing!
+> **Production Ready:** Build your own data store for production. The in-memory store is just for testing!
+
+</div>
 
 ```javascript
 const { makeInMemoryStore } = require("@owensdev1/baileys");
@@ -345,6 +506,41 @@ sock.ev.on('chats.upsert', () => {
 ---
 
 ## 👥 Groups
+
+<div align="center">
+
+### 🎯 Group Management Features
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+**🆕 Create**  
+New groups
+
+</td>
+<td align="center" width="25%">
+
+**👤 Members**  
+Add/Remove users
+
+</td>
+<td align="center" width="25%">
+
+**⚙️ Settings**  
+Name, description
+
+</td>
+<td align="center" width="25%">
+
+**🛡️ Admin**  
+Promote/Demote
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ### 🆕 Create a Group
 ```javascript
@@ -385,6 +581,29 @@ await sock.groupSettingUpdate(groupJid, 'not_announcement');
 
 ## 🔒 Privacy
 
+<div align="center">
+
+### 🛡️ Privacy Controls
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+**🚫 Block Management**  
+Block/Unblock users
+
+</td>
+<td align="center" width="50%">
+
+**⚙️ Privacy Settings**  
+Visibility controls
+
+</td>
+</tr>
+</table>
+
+</div>
+
 ### 🚫 Block/Unblock Users
 ```javascript
 // Block user
@@ -408,7 +627,11 @@ await sock.updateReadReceiptsPrivacy('all'); // 'all', 'none'
 
 ## 🐛 Debugging
 
-Enable debug mode to see all WhatsApp communications:
+<div align="center">
+
+**🔍 Enable debug mode to see all WhatsApp communications:**
+
+</div>
 
 ```javascript
 const sock = makeWASocket({
@@ -431,15 +654,37 @@ sock.ws.on('CB:edge_routing,id:abcd', (node) => {
 
 ---
 
-## 💬 Support
-
 <div align="center">
+
+## 💬 Support
 
 ### 🆘 Need Help?
 
-| 📞 **Contact** | 💬 **WhatsApp** | 📧 **Issues** |
-|:---:|:---:|:---:|
-| **6285358977442** | For Baileys support | [GitHub Issues](https://github.com/owensdev1/baileys/issues) |
+<table>
+<tr>
+<td align="center" width="33%">
+
+### 📞 Direct Contact
+**6285358977442**  
+WhatsApp Support
+
+</td>
+<td align="center" width="33%">
+
+### 💬 Community
+**WhatsApp Group**  
+Join our community
+
+</td>
+<td align="center" width="33%">
+
+### 🐛 Bug Reports
+**GitHub Issues**  
+[Report Issues](https://github.com/owensdev1/baileys/issues)
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -447,26 +692,105 @@ sock.ws.on('CB:edge_routing,id:abcd', (node) => {
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
+<div align="center">
 
-1. 🍴 Fork the repository
-2. 🌟 Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. 💻 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
-5. 🔄 Open a Pull Request
+**We welcome contributions! Here's how you can help:**
+
+</div>
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[🍴 Fork] --> B[🌟 Branch] 
+    B --> C[💻 Code] 
+    C --> D[📤 Push] 
+    D --> E[🔄 PR]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+```
+
+</div>
+
+1. **🍴 Fork** the repository
+2. **🌟 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
+3. **💻 Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **📤 Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **🔄 Open** a Pull Request
 
 ---
 
 ## 📄 License
 
+<div align="center">
+
 This project is licensed under the **GPL v3 License** - see the [LICENSE](LICENSE) file for details.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0)
+
+</div>
 
 ---
 
 ## 🙏 Acknowledgments
 
+<div align="center">
+
+**Special thanks to our amazing team and contributors who made this project possible:**
+
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+### 👑 Owens
+**Project Owner**  
+*Lead Developer*
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/owensdev1)
+
+</td>
+<td align="center" width="25%">
+
+### 🛠️ KyzRyzz
+**Technical Support**  
+*Community Management*
+
+[![Support](https://img.shields.io/badge/Support-FF6B6B?style=for-the-badge&logo=handshake&logoColor=white)](#)
+
+</td>
+<td align="center" width="25%">
+
+### 🧪 Yousoo
+**Development Support**  
+*Testing & QA*
+
+[![Testing](https://img.shields.io/badge/Testing-4ECDC4?style=for-the-badge&logo=checkmark&logoColor=white)](#)
+
+</td>
+<td align="center" width="25%">
+
+### 💻 Valzy
+**Development**  
+*Base Source*
+
+[![Development](https://img.shields.io/badge/Development-45B7D1?style=for-the-badge&logo=code&logoColor=white)](#)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### 🔧 Technical Credits
 - Built with ❤️ using [libsignal-node](https://git.questbook.io/backend/service-coderunner/-/merge_requests/1)
-- Available at [J-Forces GitHub](https://github.com/J-Forces)
 - Special thanks to the WhatsApp Web reverse engineering community
 
 ---
@@ -477,7 +801,20 @@ This project is licensed under the **GPL v3 License** - see the [LICENSE](LICENS
 
 [![GitHub stars](https://img.shields.io/github/stars/owensdev1/baileys?style=social)](https://github.com/owensdev1/baileys/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/owensdev1/baileys?style=social)](https://github.com/owensdev1/baileys/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/owensdev1/baileys?style=social)](https://github.com/owensdev1/baileys/watchers)
+
+---
+
+### 📊 Project Stats
+
+![GitHub repo size](https://img.shields.io/github/repo-size/owensdev1/baileys?style=for-the-badge&color=orange)
+![GitHub language count](https://img.shields.io/github/languages/count/owensdev1/baileys?style=for-the-badge&color=purple)
+![GitHub top language](https://img.shields.io/github/languages/top/owensdev1/baileys?style=for-the-badge&color=red)
+
+---
 
 **Made with 💻 and ☕ by the community**
+
+*© 2025 Baileys WhatsApp API - Building the future of WhatsApp automation*
 
 </div>
