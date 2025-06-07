@@ -21,10 +21,10 @@ Fork terbaru dari library Baileys dengan fitur tambahan dan perbaikan bug untuk 
 **Instalasi:**
 ```bash
 # Via @whiskeysockets/baileys
-npm install @whiskeysockets/baileys@github:owensdev1/baileys@^1.0.0
+npm install @whiskeysockets/baileys@github:owensdev1/baileys#1.0.0
 
 # Via @adiwajshing/baileys
-npm install @adiwajshing/baileys@github:owensdev1/baileys@^1.0.0
+npm install @adiwajshing/baileys@github:owensdev1/baileys#1.0.0
 ```
 
 ### 🔹 Versi 2.0.0
@@ -38,10 +38,10 @@ npm install @adiwajshing/baileys@github:owensdev1/baileys@^1.0.0
 **Instalasi:**
 ```bash
 # Via @whiskeysockets/baileys
-npm install @whiskeysockets/baileys@github:owensdev1/baileys@^2.0.0
+npm install @whiskeysockets/baileys@github:owensdev1/baileys#2.0.0
 
 # Via @adiwajshing/baileys
-npm install @adiwajshing/baileys@github:owensdev1/baileys@^2.0.0
+npm install @adiwajshing/baileys@github:owensdev1/baileys#2.0.0
 ```
 
 ---
