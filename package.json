@@ -1,5 +1,5 @@
 {
-    "name": "@owensdev1/baileys",
+    "name": "@Kenz472/baileys",
     "version": "6.7.19",
     "description": "WhatsApp API Modification By OwensDev",
     "keywords": [
@@ -12,12 +12,12 @@
         "botwa",
         "kyuurzy"
     ],
-    "homepage": "https://www.npmjs.com/package/@owensdev1/baileys",
+    "homepage": "https://www.npmjs.com/package/@Kenz472/baileys",
     "repository": {
-        "url": "https://www.npmjs.com/package/@owensdev1/baileys"
+        "url": "https://www.npmjs.com/package/@Kenz472/baileys"
     },
     "license": "MIT",
-    "author": "Rajeh Taher",
+    "author": "Kenz • Coding",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
