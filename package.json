@@ -1,23 +1,18 @@
 {
     "name": "@Kenz472/baileys",
     "version": "6.7.19",
-    "description": "WhatsApp API Modification By OwensDev",
+    "description": "Baileys Whatsapp 2025",
     "keywords": [
-        "whatsapp",
-        "laurine-wabot",
-        "baileys",
-        "whatsapp-web",
-        "whatsapp-chat",
-        "whatsapp-group",
-        "botwa",
-        "kyuurzy"
+    "baileys_wa", 
+    "Button", 
+    "Whatsapp"
     ],
     "homepage": "https://www.npmjs.com/package/@Kenz472/baileys",
     "repository": {
         "url": "https://www.npmjs.com/package/@Kenz472/baileys"
     },
     "license": "MIT",
-    "author": "Kenz • Coding",
+    "author": "Kenx • Codeing",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
