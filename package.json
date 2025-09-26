@@ -55,8 +55,8 @@
     "uuid": "^9.0.1",
     "ws": "^8.18.0",
     "@modelcontextprotocol/sdk": "^1.11.4",
-    "react-native-b4a": "^1.0.0",
-    "bare-buffer": "^1.0.0"
+    "react-native-b4a": "^0.0.3",
+    "bare-buffer": "^3.3.1"
   },
   "devDependencies": {
     "@adiwajshing/eslint-config": "github:adiwajshing/eslint-config",
