@@ -1,18 +1,23 @@
 {
-    "name": "@Kenz472/baileys",
-    "version": "7.8.20",
-    "description": "Saya Hanya memodifikasi bagian eror yang menurut saya fix 2025-2026",
-  "keywords": [
-  "baileys-simple", 
-  "button-Baileys", 
-  "kenz-coding"
-  ],
-    "homepage": "https://www.npmjs.com/package/@Kenz472/baileys",
+    "name": "@owensdev1/baileys",
+    "version": "6.7.19",
+    "description": "WhatsApp API Modification By OwensDev",
+    "keywords": [
+        "whatsapp",
+        "laurine-wabot",
+        "baileys",
+        "whatsapp-web",
+        "whatsapp-chat",
+        "whatsapp-group",
+        "botwa",
+        "kyuurzy"
+    ],
+    "homepage": "https://www.npmjs.com/package/@owensdev1/baileys",
     "repository": {
-        "url": "https://www.npmjs.com/package/@Kenz472/baileys"
+        "url": "https://www.npmjs.com/package/@owensdev1/baileys"
     },
     "license": "MIT",
-    "author": "K E N Z • C O D I N G", 
+    "author": "Rajeh Taher",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
