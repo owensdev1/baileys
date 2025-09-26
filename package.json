@@ -30,6 +30,7 @@
     "async-mutex": "^0.5.0",
     "axios": "^1.6.0",
     "chalk": "^4.1.2",
+    "futoin-hkdf": "^1.5.1",
     "gradient-string": "^2.0.2",
     "cache-manager": "^5.7.6",
     "cheerio": "^1.0.0-rc.10",
@@ -53,8 +54,7 @@
     "eslint": "^8.0.0",
     "jest": "^27.0.6",
     "jimp": "^0.16.1",
-    "json": "^11.0.0",
-    "futoin-hkdf": "^1.5.1",
+    "json": "^11.0.0"
     "link-preview-js": "^3.0.0",
     "open": "^8.4.2",
     "qrcode-terminal": "^0.12.0",
