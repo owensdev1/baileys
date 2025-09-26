@@ -1,23 +1,18 @@
 {
-    "name": "@owensdev1/baileys",
+    "name": "@Kenz472/baileys",
     "version": "6.7.19",
-    "description": "WhatsApp API Modification By OwensDev",
+    "description": "Saya Hanya Mengefix Eror Code 2025",
     "keywords": [
         "whatsapp",
-        "laurine-wabot",
+        "baileys-wabot",
         "baileys",
-        "whatsapp-web",
-        "whatsapp-chat",
-        "whatsapp-group",
-        "botwa",
-        "kyuurzy"
     ],
-    "homepage": "https://www.npmjs.com/package/@owensdev1/baileys",
+    "homepage": "https://www.npmjs.com/package/@Kenz472/baileys",
     "repository": {
-        "url": "https://www.npmjs.com/package/@owensdev1/baileys"
+        "url": "https://www.npmjs.com/package/@Kenz472/baileys"
     },
     "license": "MIT",
-    "author": "Rajeh Taher",
+    "author": "Kenz",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
@@ -76,7 +71,7 @@
         "open": "^8.4.2",
         "qrcode-terminal": "^0.12.0",
         "release-it": "^15.10.3",
-        "sharp": "^0.30.5",
+        "sharp": "^0.34.1",
         "ts-jest": "^27.0.3",
         "ts-node": "^10.8.1",
         "typedoc": "^0.24.7",
