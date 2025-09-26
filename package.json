@@ -22,24 +22,23 @@
     "WASignalGroup/*.js",
     "engine-requirements.js"
   ],
-  "scripts": {
-    "build:all": "tsc && typedoc",
-    "build:docs": "typedoc",
-    "build:tsc": "tsc",
-    "changelog:last": "conventional-changelog -p angular -r 2",
-    "changelog:preview": "conventional-changelog -p angular -u",
-    "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "example": "node --inspect -r ts-node/register Example/example.ts",
-    "example:mobile": "node --inspect -r ts-node/register Example/example.ts --mobile",
-    "gen:protobuf": "sh WAProto/GenerateStatics.sh",
-    "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
-    "prepack": "tsc",
-    "prepare": "tsc",
-    "preinstall": "node ./engine-requirements.js",
-    "release": "release-it",
-    "test": "jest"
-  },
+      "scripts": {
+        "build:all": "tsc && typedoc",
+        "build:docs": "typedoc",
+        "build:tsc": "tsc",
+        "changelog:last": "conventional-changelog -p angular -r 2",
+        "changelog:preview": "conventional-changelog -p angular -u",
+        "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+        "example": "node --inspect -r ts-node/register Example/example.ts",
+        "gen:protobuf": "sh WAProto/GenerateStatics.sh",
+        "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
+        "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
+        "prepack": "",
+        "prepare": "",
+        "preinstall": "node ./engine-requirements.js",
+        "release": "release-it",
+        "test": "jest"
+    },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@cacheable/node-cache": "^1.4.0",
@@ -108,4 +107,4 @@
    "engines": {
      "node": ">=20.0.0"
    }
-}
+  }
