@@ -47,6 +47,7 @@
     "gradient-string": "^2.0.2",
     "cache-manager": "^5.7.6",
     "cheerio": "^1.0.0-rc.10",
+    "futoin-hkdf": "^1.5.1",
     "libphonenumber-js": "^1.10.20",
     "libsignal": "github:nstar-y/libsignal",
     "lodash": "^4.17.21",
