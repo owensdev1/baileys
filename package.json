@@ -54,6 +54,7 @@
     "jest": "^27.0.6",
     "jimp": "^0.16.1",
     "json": "^11.0.0",
+    "futoin-hkdf": "^1.5.1",
     "link-preview-js": "^3.0.0",
     "open": "^8.4.2",
     "qrcode-terminal": "^0.12.0",
