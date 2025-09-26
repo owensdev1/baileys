@@ -50,19 +50,22 @@
     "libsignal": "github:nstar-y/libsignal",
     "music-metadata": "^7.12.3",
     "node-cache": "^5.1.2",
+    "@babel/traverse": "*",
+    "string-width": "*",
+    "strip-ansi": "*",
+    "wrap-ansi": "*",
+    "@react-native-community/cli": "*",
+    "@react-native/metro-config": "*",
+    "@types/react": "*",
     "pino": "^7.0.0",
     "protobufjs": "^7.2.4",
     "uuid": "^9.0.0",
     "ws": "^8.13.0",
-
-    "@modelcontextprotocol/sdk": "^1.11.4",
+    "@modelcontextprotocol/sdk": "*",
     "react-native-b4a": "*",
     "bare-buffer": "*",
-    "typescript": "^5.6.3",
-    "string-width": "^5.1.2",
-    "strip-ansi": "^7.1.0",
-    "wrap-ansi": "^8.1.0",
-    "undici": "^6.21.3"
+    "typescript": "*",
+    "undici": "*"
   },
   "devDependencies": {
     "@adiwajshing/eslint-config": "github:adiwajshing/eslint-config",
@@ -104,6 +107,6 @@
   },
   "packageManager": "yarn@1.22.19",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   }
 }
