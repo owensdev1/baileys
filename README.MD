@@ -1,13 +1,12 @@
-# 🚀 WhatsApp Web API
+# 🚀 Baileys WhatsApp 2025
 
 <div align="center">
 
-![WhatsApp API Banner](https://camo.githubusercontent.com/8c1cc888a216088f8515ca5eb0dc7131bb190d6059af8d02c4616e39b6639114/68747470733a2f2f69696c692e696f2f325a706a746c702e6a7067)
+![WhatsApp API Banner](https://i.pinimg.com/originals/24/66/d5/2466d5ff8bfd4f9f71b5f787e7e0aab7.jpg)
 
-[![npm version](https://img.shields.io/npm/v/@owensdev1/baileys?style=for-the-badge&color=00d26a&logo=npm&logoColor=white)](https://www.npmjs.com/package/@owensdev1/baileys)
-[![Downloads](https://img.shields.io/npm/dm/@owensdev1/baileys?style=for-the-badge&color=4285f4&logo=download&logoColor=white)](https://www.npmjs.com/package/@owensdev1/baileys)
-[![GitHub stars](https://img.shields.io/github/stars/owensdev1/baileys?style=for-the-badge&color=ffb400&logo=github&logoColor=white)](https://github.com/owensdev1/baileys/stargazers)
-[![License](https://img.shields.io/badge/License-GPL%20v3-e74c3c?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0)
+[![npm version](https://img.shields.io/npm/v/@Kenz472/baileys/?style=for-the-badge&color=00d26a&logo=npm&logoColor=white)](https://www.npmjs.com/~kenzz73528/)
+
+[![GitHub stars](https://img.shields.io/github/stars/Kenz472/baileys/?style=for-the-badge&color=ffb400&logo=github&logoColor=white)](https://github.com/Kenz472/baileys//stargazers)
 
 **A powerful WebSockets-based TypeScript library for interacting with the WhatsApp Web API**
 
@@ -117,10 +116,10 @@ Highly customizable with plugin support and custom event handlers
 
 ```bash
 # 📦 Using npm (stable version) **not available**
-npm install @owensdev1/baileys
+npm install @Kenz472/baileys/
 
 # 🧶 Using yarn (edge version)
-yarn add @owensdev1/baileys
+yarn add @Kenz472/baileys/
 ```
 
 </div>
@@ -128,7 +127,7 @@ yarn add @owensdev1/baileys
 ### 🔌 Basic Usage
 
 ```javascript
-const { default: makeWASocket, DisconnectReason, useMultiFileAuthState } = require("@owensdev1/baileys");
+const { default: makeWASocket, DisconnectReason, useMultiFileAuthState } = require("@Kenz472/baileys/");
 const { Boom } = require('@hapi/boom');
 
 async function connectToWhatsApp() {
@@ -172,54 +171,7 @@ connectToWhatsApp();
 
 ---
 
-<div align="center">
 
-## 📚 Table of Contents
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-### 🏗️ Setup & Connection
-- [🔌 Connecting Account](#connecting-account)
-- [📱 QR Code Connection](#starting-socket-with-qr-code)
-- [🔢 Pairing Code Connection](#starting-socket-with-pairing-code)
-- [📜 Receive Full History](#receive-full-history)
-- [⚙️ Socket Configuration](#important-notes-about-socket-config)
-- [💾 Save Auth Info](#saving--restoring-sessions)
-
-</td>
-<td align="center" width="33%">
-
-### 📨 Messaging
-- [📤 Sending Messages](#sending-messages)
-- [📝 Text Messages](#text-message)
-- [🔘 Button Messages](#buttons-message)
-- [🎯 Interactive Messages](#interactive-message)
-- [📋 Poll Messages](#poll-message)
-- [📍 Location Messages](#location-message)
-- [👤 Contact Messages](#contact-message)
-- [🎬 Media Messages](#media-messages)
-- [✏️ Modify Messages](#modify-messages)
-
-</td>
-<td align="center" width="33%">
-
-### 🔧 Advanced Features
-- [👥 Groups Management](#groups)
-- [🔒 Privacy Settings](#privacy)
-- [📢 Broadcast & Stories](#broadcast-lists--stories)
-- [📊 Data Store Implementation](#implementing-a-data-store)
-- [🎯 Custom Functionality](#writing-custom-functionality)
-- [🐛 Debug Mode](#enabling-debug-level-in-baileys-logs)
-
-</td>
-</tr>
-</table>
-
-</div>
-
----
 
 ## 🔌 Connecting Account
 
@@ -233,7 +185,7 @@ connectToWhatsApp();
 </div>
 
 ```javascript
-const { default: makeWASocket, Browsers } = require("@owensdev1/baileys");
+const { default: makeWASocket, Browsers } = require("@Kenz472/baileys/");
 
 const sock = makeWASocket({
     browser: Browsers.ubuntu('My App'),
@@ -258,7 +210,7 @@ const sock = makeWASocket({
 
 // Standard pairing
 if (!sock.authState.creds.registered) {
-    const number = '1234567890'; // Your phone number
+    const number = '628*******'; // Your phone number
     const code = await sock.requestPairingCode(number);
     console.log('🔑 Pairing Code:', code);
 }
@@ -266,7 +218,7 @@ if (!sock.authState.creds.registered) {
 // Custom pairing (8 digits/letters)
 if (!sock.authState.creds.registered) {
     const customPair = "12345678";
-    const number = '1234567890';
+    const number = '628*******';
     const code = await sock.requestPairingCode(number, customPair);
     console.log('🔑 Custom Pairing Code:', code);
 }
@@ -283,7 +235,7 @@ if (!sock.authState.creds.registered) {
 </div>
 
 ```javascript
-const { useMultiFileAuthState } = require("@owensdev1/baileys");
+const { useMultiFileAuthState } = require("@Kenz472/baileys/");
 
 const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
 
@@ -348,7 +300,7 @@ await sock.sendMessage(jid, { text: 'Hello World! 🌍' });
 ```javascript
 await sock.sendMessage(jid, {
     text: "Choose an option:",
-    footer: "© 2025 Your Bot",
+    footer: "Baileys WhatsApp 2025",
     buttons: [
         {
             buttonId: 'btn1',
@@ -369,7 +321,7 @@ await sock.sendMessage(jid, {
 ```javascript
 await sock.sendMessage(jid, {
     text: "Interactive Menu",
-    footer: "© 2025 Bot",
+    footer: "Baileys WhatsApp 2025",
     buttons: [
         {
             buttonId: 'menu',
@@ -481,7 +433,7 @@ await sock.sendMessage(jid, {
 </div>
 
 ```javascript
-const { makeInMemoryStore } = require("@owensdev1/baileys");
+const { makeInMemoryStore } = require("@Kenz472/baileys/");
 
 const store = makeInMemoryStore({});
 
@@ -545,7 +497,7 @@ Promote/Demote
 ### 🆕 Create a Group
 ```javascript
 const group = await sock.groupCreate('🎉 My Awesome Group', [
-    '1234567890@s.whatsapp.net',
+    '628*******@s.whatsapp.net',
     '0987654321@s.whatsapp.net'
 ]);
 
@@ -557,7 +509,7 @@ await sock.sendMessage(group.id, { text: 'Welcome everyone! 👋' });
 ```javascript
 await sock.groupParticipantsUpdate(
     groupJid,
-    ['1234567890@s.whatsapp.net'],
+    ['628*******@s.whatsapp.net'],
     'add' // 'remove', 'promote', 'demote'
 );
 ```
@@ -680,47 +632,13 @@ Join our community
 
 ### 🐛 Bug Reports
 **GitHub Issues**  
-[Report Issues](https://github.com/owensdev1/baileys/issues)
+[Report Issues](https://github.com/Kenz472/baileys//issues)
 
 </td>
 </tr>
 </table>
 
 </div>
-
----
-
-## 🤝 Contributing
-
-<div align="center">
-
-**We welcome contributions! Here's how you can help:**
-
-</div>
-
-<div align="center">
-
-```mermaid
-graph LR
-    A[🍴 Fork] --> B[🌟 Branch] 
-    B --> C[💻 Code] 
-    C --> D[📤 Push] 
-    D --> E[🔄 PR]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
-```
-
-</div>
-
-1. **🍴 Fork** the repository
-2. **🌟 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
-3. **💻 Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **📤 Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **🔄 Open** a Pull Request
 
 ---
 
@@ -750,38 +668,11 @@ This project is licensed under the **GPL v3 License** - see the [LICENSE](LICENS
 <tr>
 <td align="center" width="25%">
 
-### 👑 Owens
+### 👑 Kenz • Coding
 **Project Owner**  
 *Lead Developer*
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/owensdev1)
-
-</td>
-<td align="center" width="25%">
-
-### 🛠️ KyzRyzz
-**Technical Support**  
-*Community Management*
-
-[![Support](https://img.shields.io/badge/Support-FF6B6B?style=for-the-badge&logo=handshake&logoColor=white)](#)
-
-</td>
-<td align="center" width="25%">
-
-### 🧪 Yousoo
-**Development Support**  
-*Testing & QA*
-
-[![Testing](https://img.shields.io/badge/Testing-4ECDC4?style=for-the-badge&logo=checkmark&logoColor=white)](#)
-
-</td>
-<td align="center" width="25%">
-
-### 💻 Valzy
-**Development**  
-*Base Source*
-
-[![Development](https://img.shields.io/badge/Development-45B7D1?style=for-the-badge&logo=code&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kenz472)
 
 </td>
 </tr>
@@ -799,22 +690,14 @@ This project is licensed under the **GPL v3 License** - see the [LICENSE](LICENS
 
 ### ⭐ Star this repo if it helped you!
 
-[![GitHub stars](https://img.shields.io/github/stars/owensdev1/baileys?style=social)](https://github.com/owensdev1/baileys/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/owensdev1/baileys?style=social)](https://github.com/owensdev1/baileys/network)
-[![GitHub watchers](https://img.shields.io/github/watchers/owensdev1/baileys?style=social)](https://github.com/owensdev1/baileys/watchers)
+[![GitHub stars](https://img.shields.io/github/stars/Kenz472/baileys/?style=social)](https://github.com/Kenz472/baileys//stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Kenz472/baileys/?style=social)](https://github.com/Kenz472/baileys//network)
+[![GitHub watchers](https://img.shields.io/github/watchers/Kenz472/baileys/?style=social)](https://github.com/Kenz472/baileys//watchers)
 
 ---
 
-### 📊 Project Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/owensdev1/baileys?style=for-the-badge&color=orange)
-![GitHub language count](https://img.shields.io/github/languages/count/owensdev1/baileys?style=for-the-badge&color=purple)
-![GitHub top language](https://img.shields.io/github/languages/top/owensdev1/baileys?style=for-the-badge&color=red)
 
----
-
-**Made with 💻 and ☕ by the community**
-
-*© 2025 Baileys WhatsApp API - Building the future of WhatsApp automation*
+*© Baileys WhatsApp 2025*
 
 </div>
